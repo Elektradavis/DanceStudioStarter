@@ -82,7 +82,9 @@ public class MainController {
         DanceClass existingDanceClass = danceClasses.findById(updatedDanceClass.getId());
         existingDanceClass.setTitle(updatedDanceClass.getTitle());
         existingDanceClass.setAge(updatedDanceClass.getAge());
-        existingDanceClass.setAge(updatedDanceClass.getAge());
+        existingDanceClass.setStyle(updatedDanceClass.getStyle());
+        existingDanceClass.setTeacher(updatedDanceClass.getTeacher());
+        existingDanceClass.setDay(updatedDanceClass.getDay());
         existingDanceClass.setDescription(updatedDanceClass.getDescription());
         
         danceClasses.update(existingDanceClass);
